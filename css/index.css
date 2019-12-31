@@ -1,0 +1,32 @@
+
+ input, div{
+	 text-align: center;
+ }
+ 
+ table{
+	 font-size: 18px;
+	 margin-top: 20px;
+ }
+ 
+ ul{
+   display: inline-block;
+   background-color: #fff;
+ }
+ 
+form{
+	color: #000000;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	margin-top: 20px;
+}
+
+#pnum, #pnum2, #A, #B, #C{
+	width: 50px;
+}
+
+h3{
+	line-height: 20px;
+	font-weight: 800;
+}
+
+

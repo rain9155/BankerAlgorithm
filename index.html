@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <title>银行家算法</title>
+</head>
+
+<body>
+	<h3>资源分配表: </h3>
+	<div class="table-responsive">
+		 <table class="table table-bordered" border="1">
+		    <tr>
+		       <th rowspan="2">资源\进程号</th>
+		       <th>Max</th>
+		       <th>Allocation</th>
+		       <th>Need</th>
+		       <th>Available</th>
+		   </tr>
+		   <tr>
+		     <td>A B C</td>
+		     <td>A B C</td>
+		     <td>A B C</td>
+		     <td>A B C</td>
+		   </tr>
+		   <tr id="-1">
+		     <td></td>
+		     <td></td>
+		     <td></td>
+			 <td></td>
+		     <td>3 3 2</td>
+		   </tr>
+		   <tr id="0">
+		     <td>0</td>
+		     <td>7 5 3</td>
+		     <td>0 1 0</td>
+		     <td>7 4 3</td>
+		     <td></td>
+		   </tr>
+		   <tr id="1">
+		     <td>1</td>
+		     <td>3 2 2</td>
+		     <td>2 0 0</td>
+		     <td>1 2 2</td>
+		     <td></td>
+		   
+		   </tr>
+		   <tr id="2">
+		     <td>2</td>
+		     <td>9 0 2</td>
+		     <td>3 0 2</td>
+		     <td>6 0 0</td>
+		     <td></td>
+		   
+		   </tr>
+		   <tr id ="3">
+		     <td>3</td>
+		     <td>2 2 2</td>
+		     <td>2 1 1</td>
+		     <td>0 1 1</td>
+		     <td></td>		   
+		   </tr>
+		   <tr id="4">
+		     <td>4</td>
+		     <td>4 3 3</td>
+		     <td>0 0 2</td>
+		     <td>4 3 1</td>
+		     <td></td>
+		   </tr>
+		</table>
+	</div>
+	<h3>输入进程号，为进程分配资源：</h3>
+	<form>
+		   进程号:&nbsp;<input type="text" id="pnum">&nbsp;&nbsp;&nbsp;
+		   A:&nbsp;<input type="text" id="A"> &nbsp;&nbsp;&nbsp;
+		   B:&nbsp;<input type="text" id="B"> &nbsp;&nbsp;&nbsp;
+		   C:&nbsp;<input type="text" id="C">&nbsp;&nbsp;&nbsp;
+		   <input type="button" class="request" value="请求资源">&nbsp;&nbsp;&nbsp;
+		   <input type="reset" class="reset" value="重置" />
+	</form>
+	<h3>输入进程号，撤销进程资源：</h3>
+	<form>
+		   进程号:&nbsp;<input type="text" id="pnum2">&nbsp;&nbsp;&nbsp;
+		   <input type="button" class="recover" value="回收资源">&nbsp;&nbsp;&nbsp;
+		   <input type="reset" class="reset" value="重置" />
+	</form>
+</body>
+</html>
